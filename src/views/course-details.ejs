@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('globals/head') %>
+</head>
+
+<body>
+
+    <!-- <h1>Our courses</h1> -->
+
+    <section class="our_courses">
+        <div class="container">
+            <div class="row">
+
+                <% details.forEach((detail)=> { %>
+                    <div class="col-lg-12">
+                        <div class="courses_info">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <h3><%- detail.name %></h3>
+                            <p><%- detail.desc %></p>
+                        </div>
+                    </div>
+                    <% }) %>
+            </div>
+            <div class="row">
+                <!-- <div class="col-lg-12 d-flex justify-content-center ">
+                    <button class="btn_styling">View all <i class="fa-solid fa-angle-right"></i></button>
+                </div> -->
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
